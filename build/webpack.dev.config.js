@@ -14,15 +14,34 @@ const developmentConfig = {
             options: {
               sourceMap: true, 
             }
-          }
+          }, 
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "autoprefixer",
+                    {
+                      // 选项
+                    },
+                  ],
+                ],
+              },
+            },
+          },
         ]
       }, 
       {
         test: /\.s[ac]ss$/i,
-        loader: "sass-loader",
-        options: {
-          sourceMap: true, 
-        }
+        use: [
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true, 
+            }
+          }, 
+        ]
       }
     ]
   }, 

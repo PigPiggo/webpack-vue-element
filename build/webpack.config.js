@@ -10,6 +10,7 @@ const productionConfig = require ('./webpack.prod.config');
 const commonConfig = (env) => {
   return {
     mode: env.NODE_ENV, 
+    target: 'web', 
     entry: path.join (__dirname, '../src/main.js'), 
     output: {
       filename: '[name].[contenthash].js', 

@@ -5,7 +5,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
 import './style.scss'; 
-import './aa.scss'
+import './aa.scss'; 
+import './bb.css'
 
 Vue.use(ElementUI);
 
