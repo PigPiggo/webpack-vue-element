@@ -16,8 +16,6 @@
 </script>
 <style lang="scss" scoped>
 #text {
-  div {
-    background-color: red;
-  }
+  color: yellow
 }
 </style>

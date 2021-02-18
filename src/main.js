@@ -4,6 +4,9 @@ import App from './app.vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import './style.scss'; 
+import './aa.scss'
+
 Vue.use(ElementUI);
 
 const root = document.createElement('div')
