@@ -1,21 +1,20 @@
 <template>
-  <div id="text">
-    <div>
-      {{ text }}
-    </div>
+  <div>
+    <aa />
+    <bb />
   </div>
 </template>
 <script>
+  import bb from './components/bb.vue'; 
+  import aa from './components/aa.vue'
   export default {
-    data() {
-      return {
-        text: 'hello world'
-      }
-    }
+    components: {
+      bb, aa
+    }, 
   }
 </script>
 <style lang="scss" scoped>
-#text {
-  color: yellow
+.text {
+  background-color: blue;
 }
 </style>

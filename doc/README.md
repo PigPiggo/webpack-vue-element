@@ -1,4 +1,4 @@
-# webpack-vue# 项目简介
+# 项目简介
 ## 初衷
 由于vue-cli的高度封装，使得vue项目优化及webpack客制化配置变得困难，所以新建这个项目，手动配置一套vue+webpack+elementUI的项目
 ## 技术栈
