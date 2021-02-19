@@ -40,6 +40,12 @@ const commonConfig = (env) => {
             }
           ]
         }, 
+        // babel
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader'
+        }
       ]
     }, 
     plugins: [
