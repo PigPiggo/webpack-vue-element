@@ -6,7 +6,7 @@ const developmentConfig = {
   module: {
     rules: [
       {
-        test: /.css$/, 
+        test: /\.css$/i, 
         use: [
           'style-loader', 
           {
@@ -15,31 +15,25 @@ const developmentConfig = {
               sourceMap: true, 
             }
           }, 
-          {
-            loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                plugins: [
-                  [
-                    "autoprefixer",
-                    {
-                      // 选项
-                    },
-                  ],
-                ],
-              },
-            },
-          },
+          "postcss-loader",
         ]
       }, 
       {
         test: /\.s[ac]ss$/i,
         use: [
+          'style-loader', 
           {
-            loader: "sass-loader",
+            loader: 'css-loader', 
             options: {
               sourceMap: true, 
             }
+          }, 
+          "postcss-loader",
+          {
+            loader: "sass-loader",
+            /* options: {
+              sourceMap: true, 
+            } */
           }, 
         ]
       }

@@ -13,5 +13,6 @@ export default {
 <style lang="scss" scoped>
 .text {
   color: red; 
+  display: flex;
 }
 </style>
